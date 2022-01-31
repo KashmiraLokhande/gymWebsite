@@ -1,0 +1,190 @@
+<doctype>
+<html>
+<head>
+<title>
+gym website temp
+</title>
+<style>
+.mainheader{
+overflow:hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+font-size:100%;
+font-family:Lucida Handwriting;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.mySlides {
+display:none;
+}
+.slideShow{
+width:100%;
+height:600px;
+}
+.slideShow img{
+width:100%;
+height:600px;
+}
+.belowheader{
+background-color:rgb(240,240,240);
+}
+.info{
+float:left;
+background-color:rgb(240,240,240);
+width:50%;
+}
+.img1{
+float:left;
+background-color:rgb(240,240,240);
+width:50%;
+}
+.info2{
+text-align:center;
+background-color:rgb(240,240,240);
+float:left;
+width:50%;
+}
+.footer{
+   background-color: #111;
+}
+.add{
+text-align:center;
+background-color: #111;
+float:left;
+width:34%;
+height:250px;
+font-family:Lucida Handwriting;
+color:white
+}
+.sch{
+text-align:center;
+background-color: #111;
+float:left;
+width:33%;
+height:250px;
+font-family:Lucida Handwriting;
+color:white
+}
+.contact{
+text-align:center;
+background-color: #111;
+float:left;
+font-family:Lucida Handwriting;
+width:33%;
+height:250px;
+color:white;
+}
+
+</style>
+</head>
+<body >
+<div class="mainHeader">
+	<div class="navbar">
+	<ul >
+		<li><a href="contactUs.html"> Contact us</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+		<li><a href="programs.html">Programs </a></li>
+		<li><a href="aboutUs.html"> About us</a> 
+		<li><a class="active" href="homepage.html"> Home</a></li>
+		<li style="float:left"><img src="images/logo1.png" style="width:250px;height:60px;"></li>
+		</ul>
+	</div>
+<div class="slideShow" style="max-width:100%">
+			<img class="mySlides" src='images/slide1.jpeg'>
+			<img class="mySlides" src='images/slide2.jpg'>
+			<img class="mySlides" src='images/slide3.png'>
+			<img class="mySlides" src='images/slide4.jpg'>
+			<img class="mySlides" src='images/slide5.jpg'>
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel()
+			 {
+    				var i;
+    				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length)
+				{myIndex = 1}
+				x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+</div>
+<div class="heading">
+<h2 style="background-color:rgb(0, 0, 0); font-size: 30px; color:white; font-family:Lucida Handwriting; text-align: center;">WELCOME TO CityFitness GYM</h2>
+</div>
+<div class="belowheader">
+<div class="info">
+<h4 style="font-size: 15px;font-family:Lucida Handwriting;">
+</br>
+City Fitness is a gym with a heart and a soul. Located just steps away from the metro, we are Cleveland Park’s favorite workout spot. Our friendly staff is approachable and our members are your neighbors, the young and the grown up folks. We believe in a holistic approach to wellness that addresses the full spectrum of health. We invite you to join our fun, warm and welcoming community.</br></br>
+Our core is 33 years solid. Fitness fads come and go, and we have learned what is classic and has longevity: a commitment to serving others.<br/></br>
+Let us help you get strong, balanced & flexible – mentally and physically. In order to help you achieve your fitness goals, City Fitness offers 3 free personal training sessions and a complete selection of cardio equipment, free weights, weight machines and fitness classes. At the end of your workout, whether you’re a beginner or a seasoned exerciser, you will leave the gym with a positive vibe and an energetic presence.</br>
+</br>
+</br>
+</h4>
+</div>
+<div class="img1">
+<img src="images/img1.png" width="650px" height="250px">
+</div>
+<div class="info2">
+<h2 style="color:rgb(255,127,80)">SEPERATE LADIES AND GENTS</H2>
+<h4 style="font-size: 15px;font-family:Lucida Handwriting;">
+At Fitness Point you can work-out without being bothered </br>about who is working-out alongside you. </br>With separate workout areas for ladies and gents.
+</div>
+</div>
+<div class="footer">
+<div class="add">
+<h2>ADDRESS:</h2>
+<h4>Guruvaibhav Apt.,Near Dnaneshwar Nagar,Ramayana Cultural Hall to Stadium Road, Ulkanagari, Garkheda, Aurangabad, Maharashtra 431003</h4></br>
+</div>
+<div class="contact">
+<h2>CONTACT US:</h2>
+<h4>Email:cityfitness@gmail.com</br>
+Phone:0240-234567</br></h4></br></br><br>
+</div>
+<div class="sch">
+<h3>SCHEDULE:</h3>
+<h4>Monday-Tuesday</h4>
+<h4>6:00-10:00 a.m</h4>
+<h4>7:00-11:00 p.m</h4>
+<h4>Sunday closed</h4></br>
+</div>
+
+
+
+</div>
+</body>
+</html>

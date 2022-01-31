@@ -1,0 +1,179 @@
+<doctype>
+<html>
+<head>
+<title>
+gym website temp
+</title>
+<style>
+.mainheader{
+overflow:hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+font-size:100%;
+font-family:Lucida Handwriting;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.footer{
+   background-color: #111;
+}
+.add{
+text-align:center;
+background-color: #111;
+float:left;
+width:34%;
+height:250px;
+font-family:Lucida Handwriting;
+color:white;
+}
+.sch{
+text-align:center;
+background-color: #111;
+float:left;
+width:33%;
+height:250px;
+font-family:Lucida Handwriting;
+color:white;
+}
+.contact{
+text-align:center;
+background-color: #111;
+float:left;
+font-family:Lucida Handwriting;
+width:33%;
+height:250px;
+color:white;
+}
+.feedback{
+font-family:Lucida Handwriting;
+font-size:20px;
+text-align: center;
+overflow:auto;
+width: auto;
+height:auto;
+ padding-top: 2cm;
+}
+</style>
+</head>
+<body >
+<div class="mainHeader">
+	<div class="navbar">
+	<ul >
+		<li><a href="contactUs.html"> Contact us</a></li>
+		<li><a class="active" href="feedback.html">Feedback</a></li>
+		<li><a href="programs.html">Programs </a></li>
+		<li><a href="aboutUs.html"> About us</a> 
+		<li><a href="homepage.html"> Home</a></li>
+		<li style="float:left"><img src="images/logo1.png" style="width:250px;height:60px;"></li>
+		</ul>
+	</div>
+
+
+<div class="feedback">
+<form onsubmit="validate()" name="myform" method="POST" action="">
+NAME:<input type="text" name="fname" placeholder="firstname"/>  <input type="text" name="lname" placeholder="lastname"/><br/><br/>
+EMAIL:<input type="email" name="emailID"><br/><br/>
+Feedback:<input type="textarea" style="height:50px;width:350px" name="feedback" /><br/><br/>
+ <input type="submit" style="height:50px;width:100px" name="submit" />
+
+</form>
+
+<script>
+function validate()
+{
+	var fname=document.myform.fname.value;
+	if(fname=="")
+	{
+		alert("please enter your first name");
+		return false;
+	
+	}
+	var n=/[a-zA-Z]/;
+	var n1=/[0-9]/;
+	if((!fname.match(n)) || ( fname.match(n1)))
+	{
+		alert("First name should contain letters only");
+		return false;
+	}
+var lname=document.myform.lname.value;
+	if(lname=="")
+	{
+		alert("please enter your last name");
+		return false;
+	}
+	var n=/[a-zA-Z]/;
+	var n1=/[0-9]/;
+	if((!lname.match(n)) || ( lname.match(n1)))
+	{
+		alert("last name should contain letters only");
+		return false;
+	}
+
+	var email=document.myform.email.value;
+	if(email=="")
+	{
+		alert("please enter your email");
+		return false;
+	}
+	var e=email.indexOf("@");
+	var ea=email.lastIndexOf(".");
+	if((e<1) || (ea<e+2) || (ea+2>=email.length))
+	{
+		alert(" enter proper email-id");
+		return false;
+	}
+	var feedback=document.myform.email.value;
+	var n2=/[a-zA-Z0-9]/;
+	if(!feedback.match(n2))
+	{
+	alert("enter feedback");
+	}
+}
+</script>
+</div>
+<div class="footer">
+<div class="add">
+<h2>ADDRESS:</h2>
+<h4>Guruvaibhav Apt.,Near Dnaneshwar Nagar,Ramayana Cultural Hall to Stadium Road, Ulkanagari, Garkheda, Aurangabad, Maharashtra 431003</h4></br>
+</div>
+<div class="contact">
+<h2>CONTACT US:</h2>
+<h4>Email:cityfitness@gmail.com</br>
+Phone:0240-234567</br></h4></br></br><br>
+</div>
+<div class="sch">
+<h3>SCHEDULE:</h3>
+<h4>Monday-Tuesday</h4>
+<h4>6:00-10:00 a.m</h4>
+<h4>7:00-11:00 p.m</h4>
+<h4>Sunday closed</h4></br>
+</div>
+</body>
+</html>
